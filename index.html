@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <title>rock, paper and Scissors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comforter&family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<body class="=body">
+    <!-- GAME PAGE -->
+
+
+    <div style="display: none" id="mySidebar">
+                <!-- instruction bar -->
+
+          <div class="dropdown">
+            <button class="info-btn" onclick="instruction()">Info>> </button>
+            <button
+            class="close-info-btn"
+            id="closeInfo"
+            onclick="closeInstruction()">
+            START
+            </button>
+
+            <div class="dropdown-content" id="instruct">
+              <h5>ROCK, PAPER&SCISSORS</h5>
+              <p>
+                Rock-Paper-Scissors is often played to settle disputes between two
+                people. Thought to be a game of chance that depends on random luck
+                similar to flipping coins.<br />
+                The game is played with three possible hand signals that represent a
+                rock, paper, and scissors. The rock is a closed fist; paper is a
+                flat hand with fingers and thumb extended and the palm facing
+                downward; and scissors is a fist with the index and middle fingers
+                fully extended toward the opposing player. Rock wins against
+                scissors; paper wins against rock; and scissors wins against paper.
+                If both players throw the same hand signal, it is considered a draw.
+                <hr>
+                </p>
+                <h5>Barbara</h5>
+                <p>Your opponent is Hermionne, Barbara. She is as competitive as 
+                  Monica Bing and 
+                  equallly as cunning as
+                  lord Voldermont. She just doesnt lose.
+                  I heard she is a witch so don't make jest of her hand
+                  except if you don't mind being turned to a frog.
+                <br><br>The game starts at 5 points,
+         when you reach 10 points you win and when you reach 
+         zero, it's game over.
+                  I wish you all the best.
+                <span class="signature" style="font-family: cursive;"
+                style="margin-left: 20px;"
+                style="position: absolute;">Odunayo</span>
+                </p>
+            </div>
+
+            
+      </div>
+      <p id="greet-el"><span id="greet-strong"></span></p>
+      <audio loop id="theme-music">
+        <source src="images/sound/background.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="close-sound">
+        <source src="images/sound/close.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="open-sound">
+        <source src="images/sound/open.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="mock-sound">
+        <source src="images/sound/mock.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="whoosh-sound">
+        <source src="images/sound/woosh.mp3" type="audio/mp3">
+      </audio>
+
+
+     
+
+      <audio id="angry-sound">
+        <source src="images/sound/angry.mp3" type="audio/mp3">
+      </audio>
+
+      <audio id="ocean-sound">
+        <source src="images/sound/ocean.mp3" type="audio/mp3">
+      </audio>
+
+      <audio loop id="boo-sound">
+        <source src="images/sound/boo.mp3" type="audio/mp3">
+      </audio>
+
+
+      <p id="commentary-el"> Hi, I'm Babara and I dont like you!
+      </p>
+      <div  class="game-screen-container" id="game-screen-contain">
+      <div class="game-screen" id="game-screen1">
+        <p class="screen-text" id="screenText">Babara does not <br> lose. She could cheat <br>
+        sometimes though <br> Babara knows the game more than you</p>
+        <h3 id="bot-el"></h3>
+        <p class="babara" id="babara-text">babara</p>
+        <div class="bot-el-dash" id="bot-dash"></div>
+              <!-- <button onclick="w3_close()">Close &times;</button> -->
+        
+  
+
+
+      <!-- instruction bar -->
+
+      
+
+      <div class="game-start" id="gameStart">
+        
+        <div class="hand-text-container">
+        
+          <p id="game-end"></p>
+        
+        
+
+      </div>
+        
+        <div id="game-screen-cont" class="game-btn-container" >
+        <img id="rock-btn" src="images/rock-icon.png" onclick="rock()"></img>
+        <img id="paper-btn" src="images/paper-icon.png" onclick="paper()"></img>
+        <img id="sci-btn" src="images/scissors-icon.png" onclick="sci()"></img>
+        </div>
+        <button id="reward-btn" onclick="reward()">GET YOUR REWARD</button>
+      
+      
+      </div>
+    </div>
+    <div class="game-screen2" id="screen2">
+      <p class="screen2-text">Three different <br>shapes with an  <br>outstretched hand</p>
+      <div class="game-screen3"> <img id="player-hand" src="" alt="" />
+        <img id="babara-hand" src="" alt="" />
+        <p id="analysis-el"></p>
+        <p id="ref-el" ></p>
+        <p id="score-el">05</p>
+
+        
+</div>
+
+<p class="user">you</p>
+<p id="display-el"></p>
+<div class="screen2-flex-container">
+          <h6>ODUN</h6>
+          <p>built with</p>
+          <p>html</p>
+          <p>css and js</p>
+        </div>
+</div>
+  </div>  
+  </div>
+
+
+    <!-- welcome page also reward page later -->
+    
+    <div class="welcome" >
+      
+      
+      
+
+      <h1 class="header-text" id="header-el">THE BARBARA'S<br> GAME</h1>
+      <p class="header-subtext">no one beats babara</p>
+      
+        <div class="img-container">
+          <img src="images/coverimage.jpg" alt="hero" id="hero-img" />
+      
+          <p class="sub-text" id="sub-el"></p>
+          <div id="footer"><a id="twitter" href="https://twitter.com/prince_laurel12?t=ixqAavM_qKScYwhFs2yKiw&s=08"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <p id="play-again" onclick="reload()" >Replay &nbsp;<i class="fa fa-play" aria-hidden="true"></i></p>
+          </div>
+          <input placeholder= "enter your name here.." type="text" name="name" id="name-el" />
+          <button class="start-btn" id="start-btn" onclick="openGame(),greet()">Start>></button>
+          
+      <div class="design-bottom" id="bottom-design"></div>
+        </div>
+      
+      
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
